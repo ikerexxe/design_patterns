@@ -7,7 +7,7 @@ import org.junit.jupiter.api.Test;
 class TestFactoryMethod {
 
 	@Test
-	void testNYStyleCheesePizza() {
+	void whenNYStyleCheesePizzaIsOrdered_thenNYStyleCheesePizzaIsDelivered() {
 		PizzaStore pizzaStore = new NYPizzaStore();
 		Pizza pizza = pizzaStore.orderPizza("chesse");
 		
@@ -15,7 +15,7 @@ class TestFactoryMethod {
 	}
 	
 	@Test
-	void testNYStylePepperoniPizza() {
+	void whenNYStylePepperoniPizzaIsOrdered_thenNYStylePepperoniPizzaIsDelivered() {
 		PizzaStore pizzaStore = new NYPizzaStore();
 		Pizza pizza = pizzaStore.orderPizza("pepperoni");
 		
@@ -23,7 +23,7 @@ class TestFactoryMethod {
 	}
 	
 	@Test
-	void testNonExistingPizza() {
+	void whenNonExistingPizzaIsOrdered_thenNoPizzaIsDelivered() {
 		PizzaStore pizzaStore = new NYPizzaStore();
 		Pizza pizza = pizzaStore.orderPizza("NonExisting");
 		
@@ -31,7 +31,7 @@ class TestFactoryMethod {
 	}
 	
 	@Test
-	void testChicagoStyleClamPizza() {
+	void whenChicagoStyleClamPizzaIsOrdered_thenChicagoStyleClamPizzaIsDelivered() {
 		PizzaStore pizzaStore = new ChicagoPizzaStore();
 		Pizza pizza = pizzaStore.orderPizza("clam");
 		

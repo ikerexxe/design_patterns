@@ -7,7 +7,7 @@ import org.junit.jupiter.api.Test;
 class TestFlyBehavior {
 
 	@Test
-	void testFlyWithWings() {
+	void whenFlyBehaviorIsCreated_thenFlies() {
 		String result;
 		FlyBehavior flyBehavior = new FlyWithWings();
 		
@@ -17,7 +17,7 @@ class TestFlyBehavior {
 	}
 	
 	@Test
-	void testFlyNoWay() {
+	void whenCantFlyBehaviorIsCreated_thenCantFly() {
 		String result;
 		FlyBehavior flyBehavior = new FlyNoWay();
 		

@@ -7,7 +7,7 @@ import org.junit.jupiter.api.Test;
 class TestDuck {
 
 	@Test
-	void testMallardDuck() {
+	void whenMallardDuckIsCreated_thenFliesAndQuacks() {
 		String flyResult, quackResult;
 		Duck mallardDuck = new MallardDuck();
 		
@@ -19,7 +19,7 @@ class TestDuck {
 	}
 	
 	@Test
-	void testModelDuck() {
+	void whenModelDuckIsCreated_thenCantFlyAndQuacks() {
 		String flyResult, quackResult;
 		Duck modelDuck = new ModelDuck();
 		
@@ -31,7 +31,7 @@ class TestDuck {
 	}
 	
 	@Test
-	void testChangeBehavior() {
+	void whenModelDuckIsCreatedAndBehaviorChanges_thenCantFlyAndFlies() {
 		String originalFlyResult, changedFlyResult;
 		Duck modelDuck = new ModelDuck();
 		

@@ -7,7 +7,7 @@ import org.junit.jupiter.api.Test;
 class TestQuackBehavior {
 
 	@Test
-	void testQuack() {
+	void whenQuackBehaviorIsCreated_thenQuacks() {
 		String result;
 		QuackBehavior quackBehavior = new Quack();
 		
@@ -16,7 +16,7 @@ class TestQuackBehavior {
 	}
 	
 	@Test
-	void testMuteQuack() {
+	void whenMuteBehaviorIsCreated_thenSilence() {
 		String result;
         QuackBehavior quackBehavior = new MuteQuack();
         

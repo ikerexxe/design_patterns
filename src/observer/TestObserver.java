@@ -12,7 +12,7 @@ class TestObserver {
 	static int MAX_OBSERVERS = 2;
 
 	@Test
-	void testObserver() {
+	void whenObserversAreRegistered_thenObserversAreNotified() {
 		Subject subject = new ConcreteSubject();
 		List<Observer> observers = new ArrayList<>();
 		

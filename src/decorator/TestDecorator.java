@@ -7,7 +7,7 @@ import org.junit.jupiter.api.Test;
 class TestDecorator {
 
 	@Test
-	void testHouseBlendDescription() {
+	void whenHouseBlendIsCreated_thenHouseBlendIsDescribed() {
 		String description;
 		Beverage houseBlend = new HouseBlend();
 		
@@ -17,7 +17,7 @@ class TestDecorator {
 	}
 	
 	@Test
-	void testDarkRoastDescription() {
+	void whenDarkRoastIsCreated_thenDarkRoastIsDescribed() {
 		String description;
 		Beverage darkRoast = new DarkRoast();
 		
@@ -27,7 +27,7 @@ class TestDecorator {
 	}
 	
 	@Test
-	void testEspressoPrice() {
+	void whenEspressoIsCreated_thenEspressoIsCharged() {
 		double price;
 		Beverage espresso = new Espresso();
 		
@@ -37,7 +37,7 @@ class TestDecorator {
 	}
 	
 	@Test
-	void testHouseBlendWithSoyDescription() {
+	void whenHouseBlendWithSoyIsCreated_thenHouseBlendWithSoyIsDescribed() {
 		String description;
 		Beverage houseBlend = new HouseBlend();
 		Beverage houseBlendSoy = new Soy(houseBlend);
@@ -48,7 +48,7 @@ class TestDecorator {
 	}
 	
 	@Test
-	void testDarkRoastWithMochaSoyCost() {
+	void whenDarkRoastMochaSoyIsCreated_thenDarkRoastMochaSoyIsCharged() {
 		double price;
 		Beverage darkRoast = new DarkRoast();
 		Beverage darkRoastMocha = new Mocha(darkRoast);
