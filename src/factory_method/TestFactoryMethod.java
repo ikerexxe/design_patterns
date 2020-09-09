@@ -9,7 +9,7 @@ class TestFactoryMethod {
 	@Test
 	void whenNYStyleCheesePizzaIsOrdered_thenNYStyleCheesePizzaIsDelivered() {
 		PizzaStore pizzaStore = new NYPizzaStore();
-		Pizza pizza = pizzaStore.orderPizza("chesse");
+		Pizza pizza = pizzaStore.orderPizza("cheese");
 		
 		assertEquals("NYStyleCheesePizza", pizza.getDescription());
 	}
