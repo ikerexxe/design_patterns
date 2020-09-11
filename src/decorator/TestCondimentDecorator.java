@@ -4,7 +4,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 import org.junit.jupiter.api.Test;
 
-class TestDecorator {
+class TestCondimentDecorator {
 
 	@Test
 	void whenHouseBlendIsCreated_thenHouseBlendIsDescribed() {

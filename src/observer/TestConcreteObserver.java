@@ -7,7 +7,7 @@ import java.util.List;
 
 import org.junit.jupiter.api.Test;
 
-class TestObserver {
+class TestConcreteObserver {
 	
 	static int MAX_OBSERVERS = 2;
 
