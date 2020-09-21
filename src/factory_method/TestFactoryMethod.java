@@ -23,7 +23,7 @@ class TestFactoryMethod {
 	}
 	
 	@Test
-	void whenNonExistingPizzaIsOrdered_thenNoPizzaIsDelivered() {
+	void whenNYNonExistingPizzaIsOrdered_thenNYNoPizzaIsDelivered() {
 		PizzaStore pizzaStore = new NYPizzaStore();
 		Pizza pizza = pizzaStore.orderPizza("NonExisting");
 		
@@ -36,6 +36,14 @@ class TestFactoryMethod {
 		Pizza pizza = pizzaStore.orderPizza("clam");
 		
 		assertEquals("ChicagoStyleClamPizza", pizza.getDescription());
+	}
+	
+	@Test
+	void whenChicagoNonExistingPizzaIsOrdered_thenChicagoNoPizzaIsDelivered() {
+		PizzaStore pizzaStore = new ChicagoPizzaStore();
+		Pizza pizza = pizzaStore.orderPizza("NonExisting");
+		
+		assertNull(pizza);
 	}
 
 }
