@@ -17,13 +17,14 @@ class TestCondimentDecorator {
 	}
 	
 	@Test
-	void whenDarkRoastIsCreated_thenDarkRoastIsDescribed() {
+	void whenDarkRoastWithMochaIsCreated_thenDarkRoastWithMochaIsDescribed() {
 		String description;
 		Beverage darkRoast = new DarkRoast();
+		Beverage darkRoastMocha = new Mocha(darkRoast);
 		
-		description = darkRoast.getDescription();
+		description = darkRoastMocha.getDescription();
 		
-		assertEquals("DarkRoast", description);
+		assertEquals("DarkRoast, mocha", description);
 	}
 	
 	@Test
@@ -45,6 +46,16 @@ class TestCondimentDecorator {
 		description = houseBlendSoy.getDescription();
 		
 		assertEquals("HouseBlend, soy", description);
+	}
+	
+	@Test
+	void whenHouseBlendIsCreated_thenHouseBlendIsCharged() {
+		double price;
+		Beverage houseBlend = new HouseBlend();
+		
+		price = houseBlend.cost();
+		
+		assertEquals(1.0, price);
 	}
 	
 	@Test
