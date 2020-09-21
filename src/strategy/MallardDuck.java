@@ -8,8 +8,12 @@ public class MallardDuck extends Duck{
 	}
 
 	@Override
-	public void display() {
-		System.out.println("Looks like a mallard duck");
+	public String display() {
+		String result = "Looks like a mallard duck";
+		
+		System.out.println(result);
+		
+		return result;
 	}
 
 }

@@ -8,7 +8,7 @@ public abstract class Duck {
 	public Duck() {
 	}
 	
-	abstract void display();
+	abstract String display();
 	
 	public String performFly() {
 		return flyBehavior.fly();
@@ -16,10 +16,6 @@ public abstract class Duck {
 	
 	public String performQuack() {
 		return quackBehavior.quack();
-	}
-	
-	public void swim() {
-		System.out.println("Swimming");
 	}
 	
 	public void setFlyBehavior(FlyBehavior fb) {
