@@ -6,7 +6,7 @@ public abstract class PizzaStore {
 	
 	public abstract Pizza createPizza(String type);
 	
-	public Pizza orderPizza(String type) {
+	public Pizza orderPizza(String type) throws NullPointerException{
 		Pizza pizza = createPizza(type);
 		
 		return pizza;
